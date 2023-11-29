@@ -23,7 +23,7 @@ namespace FashionHexa.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            ///optionsBuilder.UseSqlServer(///"Data source = DESKTOP-FA8GT7U\\SQLEXPRESS; Initial Catalog=EcomHexa ;User Id=sathwik;Password=1234;TrustServerCertificate=true");
+            ///optionsBuilder.UseSqlServer(///"Data source = DESKTOP-FA8GT7U\\SQLEXPRESS; Initial Catalog=FashionHexa ;User Id=sathwik;Password=1234;TrustServerCertificate=true");
             optionsBuilder.UseSqlServer(config["ConnectionString"]);
             base.OnConfiguring(optionsBuilder);
         }
